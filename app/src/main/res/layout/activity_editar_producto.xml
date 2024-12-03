@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".views.EditarProductoActivity">
+
+    <!-- Campo para el nombre del producto -->
+    <EditText
+        android:id="@+id/etEditarNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Producto"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para la descripción -->
+    <EditText
+        android:id="@+id/etEditarDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del Producto"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etEditarNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para el precio -->
+    <EditText
+        android:id="@+id/etEditarPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio del Producto"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etEditarDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Campo para el stock -->
+    <EditText
+        android:id="@+id/etEditarStock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Stock del Producto"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/etEditarPrecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para guardar los cambios -->
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        app:layout_constraintTop_toBottomOf="@id/etEditarStock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

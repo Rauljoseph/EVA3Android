@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EVA3</string>
+    <string name="menu_title">Menú de Productos</string>
+    <string name="btn_crear">Crear Producto</string>
+    <string name="btn_ver">Ver Productos</string>
+    <string name="btn_editar">Editar Producto</string>
+    <string name="btn_eliminar">Eliminar Producto</string>
+</resources>
